@@ -3,31 +3,69 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+  min-width: 0;
+  height: 0;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  /*-- Colors --*/
+
+  --blackTransparency: #00000030;
+  --blackTransparencyHard: #00000080;
+  --white: #ffffff;
+  --black: #000000;
+
+  --primary: #f2f2f2;
+  --primaryTransparency: #f2f2f290;
+
+  --secondary: #ffffff;
+  --secondaryTransparency: #ffffff90;
+
+  --tertiary: #888fc7;
+  --tertiaryTransparency: #888fc790;
+
+
+  /*-- Texto Family--*/
+ 
+  --familyTitle: var(--gentiumBold);
+  --familyText: var(--gentium);
+  --familyDetail: var(--telex);
+
+  /* Text Size */
+
+  /* Title */
+  
+  --sizeTitleSM: 1.6rem;
+  --sizeTitleMD: 2rem;
+  --sizeTitleLG: 2.4rem;
+
+  /* Sub */
+
+  --sizeSubSM: 1.2rem;
+  --sizeSubMD: 1.6rem;
+  --sizeSubLG: 2rem;
+
+  /* Text */
+
+  --sizeTextSM: 0.8rem;
+  --sizeTextMD: 1.2rem;
+  --sizeTextLG: 1.6rem;
+
+  /* Link */
+
+  --sizeLinkSM: 1rem;
+  --sizeLinkMD: 1.5rem;
+  --sizeLinkLG: 2.5rem;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.title {
+  font-family: var(--gentiumBold);
+  font-size: 2rem;
 }
