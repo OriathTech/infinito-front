@@ -4,6 +4,8 @@ import { Providers } from "@/context/providers";
 
 import { gentium, gentiumBold, telex } from "@/utils/fonts";
 
+import Header from "@/components/Header/Header";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -17,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="es" className={`${gentium.variable} ${gentiumBold.variable} ${telex.variable}`}>
       <body className={inter.className}>
         <Providers>
+          <Header/>
 
         <main>{children}</main>
 
