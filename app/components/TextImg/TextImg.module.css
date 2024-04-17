@@ -1,0 +1,39 @@
+.container1{
+    background-color: violet;
+    height: 75vh;
+}
+
+.container2{
+    background-color: violet;
+    height: 75vh;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.containerText{
+    height: 75vh;
+    padding: 0rem 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container1{
+        background-color: aqua;
+        height: 75vh;
+
+    }
+
+    
+    .container2{
+        background-color: aqua;
+        height: 75vh;
+        display: flex;
+        justify-content: flex-end;
+    
+    }
+    
+    .containerText{
+        height: 75vh;
+        padding: 0rem 4rem;
+    }
+}

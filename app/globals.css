@@ -62,7 +62,7 @@
 }
 
 body {
-  background: white;
+  background: var(--white);
 }
 
 .title {

@@ -4,7 +4,8 @@ import { Providers } from "@/context/providers";
 
 import { gentium, gentiumBold, telex } from "@/utils/fonts";
 
-import Header from "@/components/Header/Header";
+import Header from "@/app/components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           <Header/>
-
-        <main>{children}</main>
-
+          <main>{children}</main>
+          <Footer/>
         </Providers>
       </body>
     </html>

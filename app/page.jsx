@@ -1,9 +1,18 @@
-import Image from "next/image";
+
+import Banner from "./components/Banner/Banner";
+import Carousel from "./components/Carousel/Carousel";
+import InfoCardSection from "./components/InfoCardSection/InfoCardSection";
+import Textimg from "./components/TextImg/TextImg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    <h1 className="title">Infinito</h1>
-    </main>
+    <>
+    <Banner/>
+    <Carousel/>
+    <InfoCardSection/>
+    <Textimg/>
+
+
+    </>
   );
 }

@@ -1,0 +1,60 @@
+
+.container {
+    margin: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner {
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    text-align: center;
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.icon h3 {
+    margin: 0.5rem 0;
+    font-family: var(--familyText);
+    font-size: var(--sizeTextMD);
+}
+
+.icon p {
+    margin: 0;
+    font-family: var(--familyText);
+    font-size: var(--sizeTextSM);
+}
+
+@media only screen and (max-width: 767px) {
+    .banner {
+        justify-content: space-evenly;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 3rem auto 2rem auto;
+    }
+
+    .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem auto 2rem auto;
+    }
+
+    .icon {
+        margin-bottom: 2rem;
+    }
+}

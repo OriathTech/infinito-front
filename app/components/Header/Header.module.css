@@ -1,0 +1,58 @@
+.navbar {
+    background: var(--primary) !important;
+    height: 9dvh !important;
+    border-bottom: solid 1px var(--blackTransparency) !important;
+}
+
+.dropdown {
+    background-color: var(--primary) !important;
+}
+
+.menuBase {
+    background: var(--secondary);
+    border-radius: 10px;
+}
+
+.menuLink {
+    text-align: center !important;
+    color: var(--textHover) !important;
+    font-family: var(--familyDetail) !important;
+    font-size: var(--sizeLinkMD) !important;
+}
+
+.menuLink span{
+    text-align: center !important;
+    color: var(--textHover) !important;
+    font-family: var(--familyDetail) !important;
+    font-size: var(--sizeLinkSM) !important;
+}
+
+.link {
+    text-align: center;
+    color: var(--black) !important;
+    font-family: var(--familyTitle) !important;
+    filter: grayscale(80%) opacity(.8) !important;
+    transition: ease-in 150ms !important;
+}
+
+.link:hover {
+    color: var(--textHover) !important;
+    filter: grayscale(0%) opacity(1) !important;
+    text-shadow: var(--blackTransparency) !important;
+}
+
+.button {
+    background: transparent !important;
+}
+
+@media only screen and (min-width:1px) {
+    .link {
+        font-size: var(--sizeLinkSM) !important;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .link {
+        font-size: var(--sizeLinkMD) !important;
+    }
+}

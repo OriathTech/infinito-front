@@ -1,0 +1,81 @@
+.container {
+  max-width: 80%;
+  margin: 2dvh auto;
+}
+
+.swiper {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.slide{
+  width: 200px;
+  height: 300px;
+}
+
+/* Slider Controls */
+
+.btn {
+  height: 3rem;
+  background: rgba(255, 192, 203, 0);
+  color: black;
+  margin-top: .5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.slider_controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+
+}
+
+.slider_arrow {
+  border-radius: 100%;
+}
+
+.title {
+  font-family: var(--familyText);
+  font-size: var(--sizeTitleMD);
+  padding: 1.5rem;
+  font-weight: var(--weightLight);
+  text-align: center;
+}
+
+.controlsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  gap: 1rem;
+}
+
+.button {
+  background: var(--tertiary);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width:1440px) {
+  .container {
+    max-width: 70%;
+  }
+  .text {
+    font-size: var(--sizeTextMD);
+  }
+}
+
+@media only screen and (min-width:2500px) {
+  .container {
+    max-width: 70%;
+  }
+  .text {
+    font-size: var(--sizeTextMD);
+  }
+}

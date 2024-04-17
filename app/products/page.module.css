@@ -1,0 +1,93 @@
+.unlogin {
+    background-color: red;
+}
+
+
+.containerDropdown {
+
+    z-index: 14;
+}
+
+.maxHeightDropdown {
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 transparent;
+}
+
+.slide {
+    min-width: none;
+    position: relative;
+    width: 400px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+
+}
+
+.card {
+    width: 264px;
+    height: 340px;
+    position: relative;
+    padding: 1rem;
+}
+
+.label {
+    position: absolute;
+    top: 2.2%;
+    right: 0%;
+    width: 6rem;
+    z-index: 15;
+}
+
+.img {
+    width: 100%;
+}
+
+.text {
+    font-family: var(--font-merri);
+    font-size: var(--sizeTextMD);
+    text-align: center;
+
+}
+
+.categoryContainer {
+    font-family: var(--font-merri);
+    font-size: var(--sizeTextMD);
+    text-align: center;
+    background-color: var(--primary);
+}
+
+.textLink {
+    font-family: var(--font-merri);
+    font-size: var(--sizeTextMD);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.footer {
+    width: 100%;
+    background: var(--primary);
+    border-radius: 25px;
+    margin-top: 1rem;
+    padding: 0rem 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (min-width:2560px) {
+
+    .container {
+        width: 60%;
+    }
+
+}

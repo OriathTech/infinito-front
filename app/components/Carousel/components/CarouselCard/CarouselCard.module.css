@@ -1,0 +1,66 @@
+  /* Card */
+  
+  .card {
+    border-radius: 150px 150px 0px 0px;
+    margin: 1rem auto;
+    width:200px;
+    height:300px ;
+    background: var(--withe);
+  }
+
+  .body {
+    border-radius: 150px 150px 0px 0px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .footer {
+    width: 90%;
+    height: 20%;
+    min-height: 8rem;
+    margin: 0 auto 1rem auto;
+    padding: .3rem;
+  }
+  
+  .text {
+    text-align: start;
+    color: var(--black);
+    font-family: var(--familyText);
+    font-size: var(--sizeTextSM);
+  }
+  .textName {
+    text-align: start;
+    color: var(--tertiary);
+    font-family: var(--familyTitle);
+    font-size: var(--sizeTitleSM);
+  }
+
+
+  .imgContainer img {
+    border-radius: 0%;
+    padding-bottom: .5rem;
+    width: 100% !important; 
+    height: 100% !important; 
+    object-fit: cover !important; 
+  }
+  
+  @media only screen and (min-width:1440px) {
+    .container {
+      max-width: 70%;
+    }
+    .text {
+      font-size: var(--sizeTextMD);
+    }
+  }
+  
+  @media only screen and (min-width:2500px) {
+    .container {
+      max-width: 70%;
+    }
+    .text {
+      font-size: var(--sizeTextMD);
+    }
+  }
+  
