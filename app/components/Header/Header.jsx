@@ -27,18 +27,18 @@ export default function Header() {
         <Navbar onMenuOpenChange={setIsMenuOpen} className= {styles.navbar} >
             <NavbarContent className="hidden sm:flex gap-4">
                 <NavbarItem>
+                    <Link className={styles.link} href="/">
+                        Home
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
                     <Link className={styles.link} href="/products">
                         Productos
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link className={styles.link} href="#">
+                    <Link className={styles.link} href="/tutorials">
                         Tutoriales
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link className={styles.link} href="#">
-                        Contactos
                     </Link>
                 </NavbarItem>
             </NavbarContent>

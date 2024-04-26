@@ -1,0 +1,28 @@
+.title {
+    text-align: start;
+    color: var(--black);
+    font-family: var(--familyTitle);
+    font-size: var(--sizeTitleLG);
+}
+
+.text {
+    text-align: start;
+    color: var(--black);
+    font-family: var(--familyText);
+    font-size: var(--sizeTextMD);
+}
+
+.videoContainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
