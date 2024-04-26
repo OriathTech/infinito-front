@@ -69,7 +69,7 @@ export default function Filtro() {
         <div>
             <div className={`flex flex-col justify-center items-center px-2  md:flex-row container`}>
                 {Object.keys(selectedCategories).map(category => (
-                    <span key={category} className={`${styles.containerDropdown} w-full`}>
+                    <span key={category} className={`w-full`}>
                         <Dropdown>
                             <DropdownTrigger>
                                 <Button

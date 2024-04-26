@@ -1,11 +1,8 @@
-.containerDropdown{
-    background-color: var(--tertiaryTransparency);
-    
-}
 
 .textLink{
     background-color: var(--tertiaryTransparency);
     font-family: var(--familyText);
     font-size: var(--sizeTextMD);
+    color: var(--black);
     border-radius: 0px;
 }
