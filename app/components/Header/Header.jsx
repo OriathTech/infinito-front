@@ -56,7 +56,7 @@ export default function Header() {
             <NavbarContent justify="end">
                 <NavbarItem>
                 <Badge color="primary" content={69} isInvisible={isInvisible} className="mt-1" shape="circle">
-                    <CartIcon height={"2.4rem"} width={"2.4rem"} size={30} />
+                    <Button className={styles.button} as={Link} href="/cart" isIconOnly size="lg" startContent={<CartIcon />}></Button>
                 </Badge>
                 </NavbarItem>
                 <Dropdown className={styles.dropdown}>
