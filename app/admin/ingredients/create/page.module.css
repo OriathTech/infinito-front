@@ -1,0 +1,42 @@
+.title{
+    color: var(--textTitle);
+    font-family: var(--familyLink);
+}
+
+.input{
+    width: 100%;
+}
+
+.containerInputs{
+    min-width: 50%;
+}
+
+.containerInput{
+    min-width: 100%;
+}
+
+@media only screen and (min-width:1px){
+    .title{
+        font-size: var(--sizetitleSM);
+    }
+
+    .containerInputs{
+        min-width: 50%;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .containerInputs{
+        min-width: 50%;
+    }
+
+    .title{
+        font-size: var(--sizeTitleMD);
+    }
+}
+
+@media only screen and (min-width:2560px){
+    .title{
+        font-size: var(--sizeTitleXL);
+    }
+}

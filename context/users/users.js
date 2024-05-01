@@ -3,9 +3,9 @@ import { createContext, useState } from 'react';
 import { errorHandler } from '@/utils/errorHandler';
 import axios from 'axios';
 
-const UsersContext = createContext();
+const UserContext = createContext();
 
-const UsersProvider = ({ children }) => {
+const UserProvider = ({ children }) => {
     const [users, setUsers] = useState([]);
 
     const fetchUsers = async () => {
@@ -76,10 +76,10 @@ const UsersProvider = ({ children }) => {
     };
 
     return (
-        <UsersContext.Provider value={{ users, fetchUsers, getUserById, deleteUser, updateUser }}>
+        <UserContext.Provider value={{ users, fetchUsers, getUserById, deleteUser, updateUser }}>
             {children}
-        </UsersContext.Provider>
+        </UserContext.Provider>
     );
 };
 
-export { UsersProvider, UsersContext };
+export { UserProvider, UserContext };
