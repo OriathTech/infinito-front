@@ -1,11 +1,37 @@
-.container{
-  width: 60%;
+@media only screen and (min-width: 1px) {
+  .container{
+    width: 100%;
+  }
+  
+  .btn {
+    width: 45%;
+    height: 3rem;
+    min-width: 3rem;
+    align-items: center;
+    display: flex;
+  }
+  
+  .menuLink{
+    color: black;
+  }
+
+  .title {
+    font-family: var(--familyTitle);
+    font-size: var(--sizeTitleSM);
+    text-align: center;
+  }
+
+  .text {
+    font-family: var(--familyText);
+    font-size: var(--sizeTextMD);
+    text-align: center;
+  }
 }
 
-.btn {
-  width: 45%;
-  height: 3rem;
-  min-width: 3rem;
-  align-items: center;
-  display: flex;
+@media only screen and (min-width: 768px) {
+  .container{
+    width: 70%;
+  }
+
+
 }

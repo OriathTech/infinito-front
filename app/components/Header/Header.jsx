@@ -17,10 +17,8 @@ export default function Header() {
     const [isInvisible, setIsInvisible] = useState(false);
 
     const menuItems = [
-        "Productos",
-        "Tutoriales",
-        "Contactos",
-
+        "products",
+        "tutorials",
     ];
 
     return (
@@ -78,7 +76,7 @@ export default function Header() {
                         <Link
                             color={"foreground"}
                             className={`${styles.menuLink} w-full`}
-                            href="#"
+                            href={`${item}`}
                             size="lg"
                         >
                             {item}

@@ -147,7 +147,7 @@ export default function Cart() {
                 </tbody>
               </table>
             </div>
-            <div className="flex">
+            <div className="flex items-center my-5">
                 <Input type="Number" label="Codigo Postal" color="secondary" placeholder="Ingresa tu codigo postal" value={postalCode} onChange={handlePostalCodeChange} />
                 <Button className={`${styles.text} ${styles.btn} bg-blue-500 text-white ml-5`} onClick={handleAcceptPostalCode} radius="full">Aceptar</Button>
             </div>

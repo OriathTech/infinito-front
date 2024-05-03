@@ -67,8 +67,8 @@ export default function Checkout() {
 
   return (
     <div className={`${styles.container} container mx-auto my-5 p-4`}>
-      <h2 className="my-5 pl-2">Checkout</h2>
-      <div className="my-5 pl-2">
+      <h2 className={`${styles.title} my-5 pl-2`}>Checkout</h2>
+      <div className={`${styles.text} my-5 pl-2`}>
         <Accordion>
           <AccordionItem
             className="bg-stone-200 rounded-xl px-5"
@@ -83,19 +83,19 @@ export default function Checkout() {
         </Accordion>
       </div>
       <div>
-        <h3 className="my-5 pl-2">Detalles del envio</h3>
-        <form onSubmit={handleSubmit}>
+        <h3 className={`${styles.title} my-5 pl-2`}>Detalles del envio</h3>
+        <form onSubmit={handleSubmit} className={styles.text}>
           <Input
             type="text"
             label="Nombre y Apellido"
             placeholder="Nombre y Apellido"
-            className="my-5"
+            className={`my-5`}
             value={formData.name}
             name="name"
             onChange={handleChange}
             required
           />
-          <div className="flex my-5 gap-5">
+          <div className={`flex my-5 gap-5`}>
             <Input
               type="text"
               label="Provincia"
@@ -135,7 +135,7 @@ export default function Checkout() {
               required
             />
           </div>
-          <div className="flex my-5 gap-5">
+          <div className="flex  flex-col sm:flex-row my-5 gap-5">
             <Input
               type="text"
               label="piso"
