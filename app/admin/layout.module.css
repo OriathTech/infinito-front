@@ -1,0 +1,12 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 60dvh;
+}
+
+.container {
+    background-color: var(--secondaryTransparency);
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 2rem;
+}

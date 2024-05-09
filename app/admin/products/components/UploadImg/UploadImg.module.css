@@ -1,0 +1,56 @@
+.containerLoading{
+    background: var(--blackTransparency);
+    min-height: 50dvh;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.conteiner{
+    width: 100%;
+    background: var(--blackTransparency);
+    border-radius: 15px;
+    min-height: auto;
+}
+
+.text{
+    font-size: var(--sizeTextMD);
+    font-family: var(--familyLink);
+}
+
+.input{
+    width: 100%;
+}
+
+.containerInputs{
+    min-width: 50%;
+}
+
+.containerInput{
+    min-width: 100%;
+}
+
+@media only screen and (min-width:1px){
+    .text{
+        font-size: var(--sizeTextMD);
+    }
+
+    .containerInputs{
+        min-width:50%;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .containerInputs{
+        min-width: 50%;
+    }
+
+    .text{
+        font-size: var(--sizeTextMD);
+    }
+}
+
+@media only screen and (min-width:2560px){
+    .text{
+        font-size: var(--sizeTextLG);
+    }
+}

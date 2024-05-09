@@ -1,0 +1,86 @@
+.title {
+    text-align: center;
+    color: var(--textTitle);
+    font-size: var(--sizeTitleSM);
+    font-family: var(--familyTitle);
+}
+
+.subTitle{
+    text-align: center;
+    color: var(--textSub);
+    font-size: var(--sizeSubSM);
+    font-family: var(--familySub);
+}
+
+.textContainerIntro{
+    margin: 1rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.textContainer {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text {
+    color: var(--text);
+    font-family: var(--familyText);
+    font-weight: 400;
+    font-size: var(--sizeTextSM);
+}
+
+@media only screen and (min-width:1440px) {
+    .textContainerIntro{
+        margin: 2rem;    
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .textContainer {
+        margin: 2rem;
+    }
+
+    .text {
+        font-size: var(--sizeTextMD);
+    }
+
+    .title {
+        font-size: var(--sizeTitleMD);
+    }
+
+    .sub {
+        font-size: var(--sizeSubSM);
+    }
+
+    .textContainer div{
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width:2500px) {
+    .textContainer div{
+        width: 45%;
+        margin-top: 3rem;
+    }
+
+    .text {
+        font-size: var(--sizeTextLG);
+    }
+
+    .title {
+        font-size: var(--sizeTitleLG);
+    }
+
+    .sub {
+        font-size: var(--sizeSubLG);
+    }
+}

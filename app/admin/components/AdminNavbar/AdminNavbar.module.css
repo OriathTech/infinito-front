@@ -1,0 +1,110 @@
+
+/* mobile */
+@media only screen and (max-width:1159px) {
+    .navbar {
+        width: 100vw;
+        height: 5rem;
+        margin: 1rem auto 0 auto;
+    }
+    
+    .navbarNav {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .navItem {
+        min-width: 2rem;
+    }
+    
+    .navLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        filter: grayscale(80%) opacity(0.7);
+        transition: 100ms;
+    }
+    
+    .linkText {
+        display: none;
+        margin-left: 1rem;
+        color: var(--textSub);
+    }
+}
+
+/*medium */
+
+@media only screen and (min-width:768px) and (max-width: 1159px) {
+    .navbarNav {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+}
+
+/* large */
+
+@media only screen and (min-width:1160px) {
+    .navbar {
+        width: 5rem;
+        position: absolute;
+        margin: 2rem;
+        border-radius: 15px;
+        background-color: var(--secondaryTransparency);
+    }
+    
+    .navbarNav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .navItem {
+        width: 100%;
+    }
+    
+    .navLink {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        text-decoration: none;
+        filter: grayscale(80%) opacity(0.7);
+        transition: 100ms;
+    }
+    
+    .navLink:hover {
+        filter: grayscale(0%) opacity(1);
+    }
+    
+    .linkText {
+        display: none;
+        margin-left: 1rem;
+        color: azure;
+    }
+    
+    .navLink svg {
+        min-width: 2rem;
+        margin: 1 1.5rem;
+    }
+    
+    .navbar:hover {
+        width: 12rem;
+    }
+    
+    .navbar:hover .linkText {
+        display: block;
+    }
+
+}
+
+.active {
+    filter: grayscale(0%) opacity(1) drop-shadow(0 0 10px white);
+}
+

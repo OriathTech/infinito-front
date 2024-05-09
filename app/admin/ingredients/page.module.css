@@ -1,0 +1,41 @@
+.wrapper {
+    background-color: var(--secondaryTransparency);
+    padding: 0;
+}
+
+.tableBody {
+    padding: 0 1rem;
+    color: azure;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tableHeader {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0 1rem;
+    color: azure;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tableCell {
+    border-bottom: solid 1px rgba(0, 0,0,.5);
+    border-right: solid 1px rgba(0, 0,0,.5);
+}
+
+.tableRow {
+    margin: 0;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+.emptyWrapper {
+    color: azure
+}

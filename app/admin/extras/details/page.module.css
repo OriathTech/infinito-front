@@ -1,0 +1,48 @@
+.containerLoading{
+    min-height: 50dvh;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.title{
+    font-family: var(--familyTitle);
+    color: var(--textTitle);
+}
+
+.input{
+    width: 100%;
+}
+
+.containerInputs{
+    min-width: 50%;
+}
+
+.containerInput{
+    min-width: 100%;
+}
+
+@media only screen and (min-width:1px){
+    .title{
+        font-size: var(--sizeTitleSM);
+    }
+
+    .containerInputs{
+        min-width: 50%;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .containerInputs{
+        min-width: 50%;
+    }
+
+    .title{
+        font-size: var(--sizeTitleMD);
+    }
+}
+
+@media only screen and (min-width:2560px){
+    .title{
+        font-size: var(--sizeTitleLG);
+    }
+}
